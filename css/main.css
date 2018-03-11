@@ -138,7 +138,7 @@ body{
 /*sub_necesidades*/
 .sub_necesidades{
   position: absolute;
-  background-color: Black;
+  background-color: red;
   width: 100%;
   visibility: hidden;
   opacity: 0;
