@@ -9,6 +9,7 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+
 html {
     color: #666;
     /*font-size: 1em;*/
@@ -101,18 +102,43 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
 body{
-  width: 100%;
+  background-color: Black; /*#131f2b*/
+}
+
+.separador{
+  color: white;
+}
+
+.img_inicio{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section_title{
+  background-color: #f98107; /*#FF6F00;*/
+  color: Black;
+  font-weight: bold;
+  font-family: Arial,sans-serif;
+}
+
+.section_text{
+  background-color: Black;
+  color: #f98107;
 }
 
 #top{
-  background-color: red;
+  background-color: Black;
   width: 100%;
 }
 
 #top ul{
   list-style-type: none;
-  text-align: center;
+  text-align: left;
 }
 
 #top li{
@@ -127,6 +153,7 @@ body{
   color: white;
   background-color: Black;
   text-decoration: none;
+  font-family: Arial, sans-serif;
 }
 
 #top li a:hover{ /*el hover es una pseudoclase que hace que suceda algo
@@ -150,6 +177,7 @@ body{
   text-align: left;
   color: white;
   text-decoration: none;
+  font-family: Arial, sans-serif;
 }
 
 #top li:hover .sub_necesidades{
@@ -158,32 +186,78 @@ body{
 }
 
 .text_need_value{
-  text-align: justify;
-  padding:  10px 20px 30px 40px;
-  margin: auto;
+  text-align: left;
+  /*padding:  10px 20px 30px 40px;*/
 }
 
-div.need{
+/*div.need{
   width: 100%;
   border: 1px solid gray;
 }
 .need_value{
-  /*text-align: justify;
+  text-align: justify;
   padding-left: 40px;
-  margin: auto;*/
+  margin: auto;
   padding: 1em;
   color: white;
-  background-color: Black;
+  background-color: #06131c;
   clear: left;
   text-align: center;
+}*/
+
+/*Cambios para las necesidades*/
+.need_article{
+  margin-left: 100px;
+  border-left: 2px solid gray;
+  padding: 1em;
+  overflow: hidden;
+  color: #f98107;
 }
 
-img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.need_title{
+  background: #f98107;
+  color: Black;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
 }
+
+.need_value{
+  padding-left: 40px;
+}
+/*fin de los cambios para las necesidades*/
+
+/*Cambios para las imagenes y videos*/
+.media{
+  display: inline;
+  float: right;
+  max-width: 40%;
+}
+
+.video{
+  margin-top: 20px;
+  margin-left: 150px;
+}
+/*Fin de los cambos para imagenes y videos*/
+
+/*Cambios para las tecnologias involucradas*/
+.subsection_title{
+  margin-left: 8px;
+  color: white;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+.subsection p{
+  margin-left: 19px;
+  text-align: left;
+  color: #f98107;
+}
+.subsection_text{
+  margin-left: 19px;
+  text-align: left;
+  color: #f98107;
+}
+/*Fin de los cambios para las tecnologias involucradas*/
 
 .go-top{
   position: fixed;
@@ -191,8 +265,9 @@ img{
   right: 2em;
   text-decoration: none;
   color: Black;
-  background-color: white;
+  background-color: lightgrey;
   font-size: 12px;
+  font-weight: bold;
   padding: 1em;
   display: none;
 }
@@ -200,12 +275,6 @@ img{
 .go-top:hover{
   background-color: grey;
 }
-
-
-
-
-
-
 
 
 /* ==========================================================================

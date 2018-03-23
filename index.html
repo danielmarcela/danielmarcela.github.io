@@ -5,7 +5,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title></title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=955px">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
@@ -13,10 +13,11 @@
 
   <!-- <link rel="stylesheet" href="css/normalize.css"> -->
   <!-- Hoja del estilo creado a partir de una guía de estilo -->
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/second.css">
   <!-- Hoja del estilo creado a partir de la película -->
   <!-- <link rel="stylesheet" href="css/second.css"> -->
   <!-- <link rel="stylesheet" href="css/css2.css"> -->
+
 </head>
 <body>
 <!--Una plantilla HTML5 para películas-->
@@ -29,19 +30,21 @@
 <nav id="top">
   <ul>
     <li><a href="#sinopsis">Sinopsis</a></li>
-    <li><a href="#necesidades">Necesidades</a>
-      <ul class="sub_necesidades">
-        <li><a href="#gadget_1">A.L.I.E.</a></li>
-        <li><a href="#gadget_2">Drones</a></li>
-        <li><a href="#gadget_3">chip</a></li>
-      </ul>
-    </li>
     <li><a href="#tecnologias">Tecnologías</a></li>
     <li><a href="#impacto">Impacto</a></li>
     <li><a href="#referencias">Referencias</a></li>
+    <li><a href="#necesidades">Necesidades ▼</a>
+      <article class="sub_necesidades">
+        <a href="#gadget_1">A.L.I.E.</a>
+        <a href="#gadget_2">Drones</a>
+        <a href="#gadget_3">Chip</a>
+        <a href="#gadget_4">Superordenador</a>
+      </article>
+    </li>
   </ul>
 </nav>
 
+<hr class="separador"/>
 <!--Sinopsis-->
 <!-- <div class="section" id="Sinopsis">
   <h2 class="section_title">Sinopsis</h2>
@@ -54,23 +57,29 @@
    <p><div class="to_top"><a href="#top">&nbsp;&nbsp;</a></div></p>
 </div> -->
 
+<!--Imagen de inicio -->
+<img class="img_inicio" src="img/Los100.jpg"/>
+<hr class="separador"/>
+
 <!--Sinopsis estructurado con tags HTML5-->
-<section>
+<section id="sinopsis">
   <article>
     <header>
-      <h1>Sinopsis</h1>
+      <h1 class="section_title">Sinopsis</h1>
       <!-- Puedes hacer los headers de sección tan complejos como quieras -->
       </header>
-    <p>
+    <p class="section_text">
       Los 100 se establece 97 años después de que una devastadora Guerra nuclear acabara con casi toda
       la vida en la Tierra. Los unicos supervivientes se encuentran en una nave espacial llamada The Ark,
       desde la cual 100 delicuentes son enviados a la Tierra para comprobar si es habitable de nuevo,
       donde lucharán para poder sobrevivir y formar una comunidad, pero descubrirán que no están solos.
     </p>
-    <p><div class="to_top"><a href="#top">&nbsp;&nbsp;</a></div></p>
+    <p><div class="to_top">&nbsp;&nbsp;</a></div></p>
     <!-- Una manera de conseguir navegación "inline" dentro de la página. Puedes habilitar otras -->
    </article>
 </section>
+
+<hr class="separador"/>
 
 <section class="section" id="necesidades">
   <h2 class="section_title">Necesidades</h2>
@@ -83,52 +92,72 @@
   <article class="need" id="gadget_1">
     <hr class="separador" />
     <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3>
-    <h2 class="need_value main">A.L.I.E.</h2>
-    <h3 class="need_title">Primera Aparición:</h3><p class="need_value">0:40:03</p>
-    <h3 class="need_title">Necesidad:</h3>
-    <p class="text_need_value"> A.L.I.E. es una Inteligencia Artificial
-      (I.A.) representada por un avatar holográfico capaz de transportar a la gente a un mundo
-      ficticio, llamado “La Ciudad de la Luz”, en donde las personas no padecen ninguna enfermedad y
-      están a salvo de todos los problemas que ocurren en el mundo real.</p>
-    <img  class="media" src="img/Los100t2c16.jpg">
+    <article class="need_article">
+      <h2 class="need_value main">A.L.I.E.</h2>
+      <h3 class="need_title">Primera Aparición:</h3><p class="need_value">Temporada 2, episodio 16</br>Minuto: 0:40:03</p>
+      <h3 class="need_title">Necesidad:</h3>
+      <img  class="media" src="img/alie.jpg">
+      <p class="text_need_value"> A.L.I.E. es una Inteligencia Artificial
+        (I.A.) representada por un avatar holográfico capaz de transportar a la gente a un mundo
+        ficticio, llamado “La Ciudad de la Luz”, en donde las personas no padecen ninguna enfermedad y
+        están a salvo de todos los problemas que ocurren en el mundo real.</p>
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/GnuubKIdgRw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </article>
   </article>
 
 
   <article class="need" id="gadget_2">
     <hr class="separador" />
     <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3>
-    <h2 class="need_value main">Drones</h2>
-    <h3 class="need_title">Primera Aparición:</h3><p class="need_value">0:40:29</p>
-    <h3 class="need_title">Necesidad:</h3>
-    <p class="text_need_value"> Un dron es un vehículo aéreo no tripulado utilizado por A.L.I.E.
-      para el reconocimiento aéreo y la seguridad.</p>
-
-      <iframe class="media" src="https://www.youtube.com/watch?v=GO9I3BgMNVc" frameborder="0" allowfullscreen></iframe>
-
-    <!--Las imágenes se deben guardar en una carpeta con el nombre
-    <título_de_la_película>-analisis
-    o
-    <título_de_la_serie>t<número de temporada>c<número de capítulo>-analisis
-    -->
-    <img  class="media" src="img/Los100t2c14.png">
+    <article class="need_article">
+      <h2 class="need_value main">Drones</h2>
+      <h3 class="need_title">Primera Aparición:</h3><p class="need_value">Temporada 2, episodio 14</br>Minuto: 0:40:29</p>
+      <h3 class="need_title">Necesidad:</h3>
+      <img  class="media" src="img/Los100t2c14.png">
+      <p class="text_need_value"> Un dron es un vehículo aéreo no tripulado utilizado por A.L.I.E.
+        para el reconocimiento aéreo y la seguridad.</p>
+      <!--Las imágenes se deben guardar en una carpeta con el nombre
+      <título_de_la_película>-analisis
+      o
+      <título_de_la_serie>t<número de temporada>c<número de capítulo>-analisis
+      -->
   </article>
+</article>
 
   <article class="need" id="gadget_3">
     <hr class="separador" />
     <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3>
-    <h2 class="need_value main">Chip</h2>
-    <h3 class="need_title">Primera Aparición:</h3><p class="need_value">0:35:00</p>
-    <h3 class="need_title">Necesidad:</h3>
-    <p class="text_need_value">A este chip se le conoce como “Llave para la Ciudad de la Luz”
-      y es un chip basado en el silicio. Cuando una persona lo ingiere este interrumpe los receptors
-      del dolor y permite comunicarse con A.L.I.E. y visitar la Ciudad de Luz. Aunque este chip tiene
-      el inconveniente de que puede eliminar recuerdos asociados a experiencias dolorosas.</p>
+    <article class="need_article">
+      <h2 class="need_value main">Chip</h2>
+      <h3 class="need_title">Primera Aparición:</h3><p class="need_value">Temporada 3, episodio 1</br>Minuto: 0:35:00</p>
+      <h3 class="need_title">Necesidad:</h3>
+      <img class="media" src="img/Los100t3c1.jpg"/>
+      <p class="text_need_value">A este chip se le conoce como “Llave para la Ciudad de la Luz”
+        y es un chip basado en el silicio. Cuando una persona lo ingiere este interrumpe los receptors
+        del dolor y permite comunicarse con A.L.I.E. y visitar la Ciudad de Luz. Aunque este chip tiene
+        el inconveniente de que puede eliminar recuerdos asociados a experiencias dolorosas.</p>
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/bnXVPmyosu8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </article>
+  </article>
 
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/KvC6AXXzhys" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <article class="need" id="gadget_4">
+      <hr class="separador"/>
+      <h3 class="need_title main">Dispositivo (Interfaz/tecnología):</h3>
+      <article class="need_article">
+        <h2 class="need_value main">Superordenador</h2>
+        <h3 class="need_title">Primera Aparición:</h3><p class="need_value">Temporada 4, episodio 1</br>Minuto: 0:01:15</p>
+        <h3 class="need_title">Necesidad:</h3>
+        <img class="media" src="img/Los100t4c1.jpg"/>
+        <p class="text_need_value">En la serie encontramos este superordenador cuya función
+          principal es la de realizar simulaciones. Y además es capaz de funcionar con
+          comandos de voz. Tiene un funcionamiento muy sencillo ya que solamente hay que
+          decirle cual es la simulación que queremos obtener e inmediatamente nos muestra la
+          solución.</p>
+      </article>
     </article>
 
 
-  <p><div class="to_top"><a href="#top">&nbsp;&nbsp;</a></div></p>
+  <p><div class="to_top">&nbsp;&nbsp;</a></div></p>
 </section>
 
 <!--Necesidades empleando tags semánticos HTML5-->
@@ -149,11 +178,14 @@
   </article>
 </section> -->
 
+<hr class="separador"/>
+
 <!--Tecnologías-->
-<div class="section" id="tecnologias">
+<section class="section" id="tecnologias">
   <h2 class="section_title">Tecnologías involucradas</h2>
-  <p class="section_text">Alii mollis commune te ius. Sed id augue nullam delicata, in praesent repudiare qui. Cu brute partem aperiam vim. Vel hinc integre facilisis ea, vix idque invidunt insolens an. Per elit labore concludaturque no, ex per melius recteque.
-</p>
+  <p class="section_text">Esta serie fue estrenada en 2014 y algunas de las tecnologías que aparecen en la serie ya existían, aunque alguna de ellas todavía no estaban tan desarrolladas. </p>
+  <p class="section_text">Otras, como pueden ser el chip y el avatar holográfico de A.L.I.E. no existen hoy en día.</p>
+  <p class="section_text">Con respecto a A.L.I.E., la inteligencia artificial, en 2014 ya existían las inteligencias artificiales, pero no hasta el punto de existir un avatar holográfico de tan buena calidad y que pareciera tan real.</p>
 
   <!-- Se deben hacer referencias cruzadas con la bibliografía o recursos en
   internet utilizados para realizar el análisis. Para ello se usará un identificador
@@ -161,32 +193,38 @@
   y en el texto se incluirá la referencia cruzada, de la siguiente forma:
    [<a href="#refX">X</a>]
   -->
-  <div class="subsection">
+  <article class="subsection">
     <h3 class="subsection_title">Tecnologías disponibles en el momento de la producción</h3>
-    <p class="subsection_text">Essent neglegentur disputationi vel eu. Id perfecto consectetuer duo. Aliquip molestie voluptatibus usu eu, nam electram prodesset ea, vix quis eius ocurreret in. Malis expetendis nec ex, cum posse voluptua antiopam [<a href="#ref1">1</a>] ei. Ne pri dicit debitis, ea cum dicat prodesset eloquentiam, quo te solum graecis habemus.</p>
-  </div>
+      <p class="subsection_text">Los drones ya existían en el año en el que esta serie fue estrenada (2014), por lo que no fue algo que se inventaran para la serie, sino que lo cogieron de la realidad.</p>
+      <p class="subsection_text">Por otro lado, en lo que respecta a la inteligencia artificial, podemos dividirla en dos partes, una que ya existía en el momento de la producción de la serie, que sería la inteligencia artificial como tal, y, por otro lado, el avatar holográfico, que explicaremos a continuación.</p>
+      <p class="subsection_text">En cuanto a la parte de la I.A. que existía en el momento de la producción de la película, nos referimos a una inteligencia que posee un computador y que es capaz de tomar decisiones basándose en las percepciones que tiene de su entorno y con capacidad de aprendizaje.</p>
 
-  <div class="subsection">
+      <p class="subsection_text">En el caso del superordenador, es algo que en el momento en el que se estrenó la cuarta temporada (2017) ya existía en la realidad, ya que el primer superordenador data de los años 60 y es el DCD 6600[4] , por lo que no es algo que se diseñara explícitamente para la serie. Las diferencias que encontramos en este superordenador de la serie residen en el hecho de la gran cantidad de pantallas que posee y de la calidad de estas, a parte de que los cálculos que consigue realizar son muy superiores a los de los años 60.</p>
+      <p class="subsection_text">Por otro lado, el punto mas destacado de este superordenador es que funcione mediante comandos de voz que es algo que incluso hoy en día no está muy implementado en los ordenadores y la mayor parte de las veces se usa en dispositivos móviles. </p>
+  </article>
+
+  <article class="subsection">
     <h3 class="subsection_title">Tecnologías imaginadas en el momento de la producción</h3>
-    <p class="section_text">Nec at saepe epicuri ocurreret. Oportere reprehendunt his ne, inani aliquando ex per. Ignota animal integre ut sit, ius [<a href="#ref2">2</a>] cu nonumes partiendo. Sea te nulla blandit. Duo at erat perpetua, cu affert probatus menandri sed [<a href="#ref3">3</a>].</p>
-  </div>
-  <p><div class="to_top"><a href="#top">&nbsp;&nbsp;</a></div></p>
-</div><!--fin tecnologías-->
+    <p class="subsection_text">En cuanto a los avances tecnológicos que no existían en el momento de la produccion de la serie nos referimos a:</p>
+    <p class="subsection_text">El avatar holográfico de A.L.I.E., ya que, en el 2014, aunque sí existían hologramas, no podemos encontrar uno de tan buena calidad y tan realista como este.  Por lo tanto, es una imaginación de los productores de como podrían llegar a ser los hologramas en el futuro, en el que no hiciera falta ninguna cámara para poder proyectarlos y que llegarán a representar fielmente a los humanos, pudiendo llegar a ser idénticos.</p>
+    <p class="subsection_text">Otro avance tecnológico que no existía e incluso hoy sigue sin existir, es el chip capaz de inhibir los receptores del dolor y visitar la Ciudad de la Luz. No hay ningún chip medicinal capaz de realizar este proceso.</p>
+  </article>
+  <p><div class="to_top">&nbsp;&nbsp;</a></div></p>
+</section><!--fin tecnologías-->
 
+<hr class="separador"/>
 <!--Impacto-->
-<div class="section" id="impacto">
+<section class="section" id="impacto">
   <h2 class="section_title">Impacto</h2>
-  <p class="section_text">Duo ex alienum platonem reprimique, pri ne quas augue. Id sea solum graeco, te quo eligendi aliquando voluptatum, autem virtute labores ei has. Ut vim omnium integre copiosae, harum menandri corrumpit per ut. Duo ei saepe iriure animal.
-  </p>
-  <p class="section_text">Te usu modo maiorum fabellas, vix in meis recusabo sadipscing. Et tractatos adolescens voluptaria has, eum postea assentior te. At soluta nominati mel. Et est causae oporteat evertitur, cu fugit nonumy adipiscing quo. Sea ex diam oblique persius, sed semper vituperata ex.</p>
-  <p class="section_text">Sit quot volumus neglegentur cu. Ut mel perfecto salutatus urbanitas, justo nostrum ei eos. At vocent eligendi inimicus vix, illud saperet ex mei. Per eu causae apeirian. Quodsi deseruisse definiebas mea cu, magna suscipiantur has te, at pri erant option scaevola.</p>
-
-  <p><div class="to_top"><a href="#top">&nbsp;&nbsp;</a></div></p>
-</div>
+  <p class="section_text">Creo que todos estos dispositivos no han tenido un impacto debido a que la mayoría ya existían en el momento de la producción de la serie.</p>
+  <p class="section_text">Aunque si es cierto que muchos de ellos proponen un desarrollo más avanzado de los mismos dispositivos que coincidiría con el futuro que se plantea en la serie.</p>
+  <div class="to_top">&nbsp;&nbsp;</a></div></p>
+</section>
 
 
+<hr class="separador"/>
 <!--Referencias-->
-<div class="section" id="Referencias">
+<section class="section" id="Referencias">
   <h3 class="section_title">Referencias</h3>
 
   <ol class="referencias">
@@ -213,12 +251,12 @@
       <span class="visita">(última visita: 6 febrero de 2017)</span>
     </li>
   </ol>
-  <p><div class="to_top"><a href="#top">&nbsp;&nbsp;</a></div></p>
-</div>
+  <p><div class="to_top">&nbsp;&nbsp;</a></div></p>
+</section>
 
-<div class="footer">
+<footer class="footer">
 
-</div>
+</footer>
 
 <!-- HTML5 -->
   <footer>
