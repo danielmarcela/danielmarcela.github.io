@@ -10,18 +10,23 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-/*$css--plex: true;*/
+/*Este es el CSS sin una guía de estilo*/
+
+:root{
+    --background_color_title: #f98107;
+    --text_color: #C6BDB9;
+}
 
 html {
-    color: #222;
+    color: #666;
     /*font-size: 1em;*/
-    font-size: 12px;
+    font-size: 18px;
 }
 
 p {
-    font-size: 16px /*1.4rem*/;
-    font-weight: 400;
-    line-height: 24px;
+    font-size: 1.15em;
+    line-height: 1.5em;
+    font-family: sans-serif;
 }
 
 /*
@@ -105,50 +110,38 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body{
+  background-color: #00040a;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+.separador{
+  color: white;
+}
+
 .img_inicio{
   max-width: 100%;
   height: auto;
   display: block;
-  margin-left: 320px;
+  margin-left: auto;
   margin-right: auto;
 }
 
-body{
-  background-color: rgba(60,112,178,0.10);
-  /*font-family: 'ibm-plex-sans', 'Helvetica Neue', Arial, sans-serif;*/
-  font-family: 'ibm-plex-mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier;
-  /*font-size: 1rem;*/
-}
-
-section{
-  margin-left: 17rem;
-  margin-top: 2rem;
-  margin-right: 3rem;
-  margin-bottom: 2rem;
-}
-
-.need_article .need_value{
-  margin-left:1.5rem;
-
-}
 .section_title{
-  font-size: 2.25rem;
-  font-weight: 300;
-  line-height: 1.25;
-  background-color: #152934;
-  color: #f5f7fa;
-  font-family: .bx--type-delta;
+  background-color: var(--background_color_title); /*#FF6F00;*/
+  color: Black;
+  font-weight: bold;
+  font-family: sans-serif;
 }
-/*Barra de navegación*/
+
+.section_text{
+  color: var(--text_color);
+  font-family: sans-serif;
+}
+
 #top{
-  height: 100%;
-  width: 210px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #3d70b2;
-  overflow-x: hidden;
+  width: 100%;
 }
 
 #top ul{
@@ -159,43 +152,39 @@ section{
 #top li{
   position: relative;
   display: inline-block;
-  text-align: left;
+  text-align: center;
 }
 
 #top li a{
-  text-decoration: none;
-  padding: 2px;
-  font-size: 20px;
-  color: #ffffff;
   display: block;
-  text-align: center;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
 }
 
 #top li a:hover{ /*el hover es una pseudoclase que hace que suceda algo
                   cuando pasamos en raton por encima del texto*/
-  background-color: #5596e6;
-  color: #ffffff;
+  background-color: grey;
+  color: white-space;
 }
 
-#top .sub_necesidades a{
-  font-size: 18px;
-}
-
+/*sub_necesidades*/
 .sub_necesidades{
   position: absolute;
-  background-color: #3d70b2;
+  background-color: Black;
   width: 100%;
   visibility: hidden;
   opacity: 0;
   transition: opacity 1.5s;
-  text-align: right;
 }
 
 .sub_necesidades li a{
   display: block;
-  color: #4298bb;
+  text-align: left;
+  color: white;
   text-decoration: none;
-  font-family: Arial, sans-serif;
+  font-family: sans-serif;
 }
 
 #top li:hover .sub_necesidades{
@@ -203,36 +192,102 @@ section{
   opacity: 1;
 }
 
-/*Fin de la barra de navegacion*/
-
-.need .need_title{
-  font-size: 1.75rem;
-  font-weight: 300;
-  line-height: 35px;
+.text_need_value{
+  text-align: left;
+  /*padding:  10px 20px 30px 40px;*/
 }
 
-.subsection_title{
-  font-size: 1.25rem;
-  font-weight: 300;
-  line-height: 1.25;
-  background-color: #41d6c3;
+/*div.need{
+  width: 100%;
+  border: 1px solid gray;
 }
+.need_value{
+  text-align: justify;
+  padding-left: 40px;
+  margin: auto;
+  padding: 1em;
+  color: white;
+  background-color: #06131c;
+  clear: left;
+  text-align: center;
+}*/
+
+/*Cambios para las necesidades*/
+.need_article{
+  margin-left: 100px;
+  border-left: 2px solid gray;
+  padding: 1em;
+  overflow: hidden;
+  color: var(--text_color);
+}
+
+.need_title{
+  background: var(--background_color_title);
+  color: Black;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.need_value{
+  padding-left: 40px;
+}
+/*fin de los cambios para las necesidades*/
 
 /*Cambios para las imagenes y videos*/
 .media{
   display: inline;
-  /*float: right;*/
-  /*max-width: 500px;*/
-  width: 500px;
-  margin-left: 3rem;
-  margin-top: 2rem;
-  margin-right: 3rem;
-  margin-bottom: 2rem;
+  float: right;
+  max-width: 40%;
 }
 
+.video{
+  margin-top: 20px;
+  margin-left: 150px;
+}
 /*Fin de los cambos para imagenes y videos*/
 
+/*Cambios para las tecnologias involucradas*/
+.subsection_title{
+  font-size: 1.5em;
+  margin-left: 6px;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+}
 
+.subsection_text{
+  margin-left: 25px;
+  text-align: left;
+  color: var(--text_color);
+}
+/*Fin de los cambios para las tecnologias involucradas*/
+
+.ir-arriba{
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  text-decoration: none;
+  color: Black;
+  background-color: lightgrey;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 1em;
+  display: none;
+}
+
+footer{
+  font-size: 11px;
+  text-align: center;
+  background-color: grey;
+  color: Black;
+  left: 0;
+  bottom: 0;
+}
+
+.refX{
+  color: red;
+  font-weight: bold;
+}
 
 /* ==========================================================================
    Helper classes

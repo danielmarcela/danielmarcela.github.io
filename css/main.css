@@ -10,16 +10,18 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+/*Este es el CSS mediante una guía de estilo*/
+
 html {
-    color: #666;
-    /*font-size: 1em;*/
-    font-size: 18px;
+    color: #222;
+    font-size: 12px;
 }
 
 p {
-    font-size: 1.15em;
-    line-height: 1.5em;
-    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #152935; /*Primary text: text-01*/
 }
 
 /*
@@ -103,37 +105,49 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-body{
-  background-color: Black; /*#131f2b*/
-}
-
-.separador{
-  color: white;
-}
-
 .img_inicio{
   max-width: 100%;
   height: auto;
   display: block;
-  margin-left: auto;
+  margin-left: 320px;
   margin-right: auto;
 }
 
-.section_title{
-  background-color: #f98107; /*#FF6F00;*/
-  color: Black;
-  font-weight: bold;
-  font-family: Arial,sans-serif;
+body{
+  background-color: rgba(60,112,178,0.10);
+  font-family: Courier;
 }
 
-.section_text{
-  background-color: Black;
-  color: #f98107;
+section{
+  margin-left: 17rem;
+  margin-top: 2rem;
+  margin-right: 3rem;
+  margin-bottom: 2rem;
 }
 
+.need_article .need_value{
+  margin-left:1.5rem;
+}
+
+.section_title{ /*Alpha-36*/
+  font-size: 2.25rem;
+  font-weight: 300;
+  line-height: 1.25;
+  background-color: #3d70b2;
+  color: #f5f7fa;
+  font-family: Courier;
+}
+
+/*Barra de navegación*/
 #top{
-  background-color: Black;
-  width: 100%;
+  height: 100%;
+  width: 210px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #3d70b2;
+  overflow-x: hidden;
 }
 
 #top ul{
@@ -143,39 +157,41 @@ body{
 
 #top li{
   position: relative;
-  display: inline-block;
-  text-align: center;
+  text-align: left;
 }
 
 #top li a{
-  display: block;
-  padding: 15px 20px;
-  color: white;
-  background-color: Black;
   text-decoration: none;
-  font-family: Arial, sans-serif;
+  padding: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
 }
 
 #top li a:hover{ /*el hover es una pseudoclase que hace que suceda algo
                   cuando pasamos en raton por encima del texto*/
-  background-color: grey;
-  color: white-space;
+  background-color: #5596e6;
+  color: #ffffff;
 }
 
-/*sub_necesidades*/
+#top .sub_necesidades a{
+  font-size: 18px;
+  display: block;
+}
+
 .sub_necesidades{
   position: absolute;
-  background-color: Black;
+  background-color: #3d70b2;
   width: 100%;
   visibility: hidden;
   opacity: 0;
   transition: opacity 1.5s;
+  text-align: center;
 }
 
 .sub_necesidades li a{
   display: block;
-  text-align: left;
-  color: white;
+  color: #4298bb;
   text-decoration: none;
   font-family: Arial, sans-serif;
 }
@@ -185,98 +201,42 @@ body{
   opacity: 1;
 }
 
-.text_need_value{
-  text-align: left;
-  /*padding:  10px 20px 30px 40px;*/
+/*Fin de la barra de navegacion*/
+
+.need .need_title{ /*Beta-28*/
+  font-size: 1.75rem;
+  font-weight: 300;
+  line-height: 35px;
 }
 
-/*div.need{
-  width: 100%;
-  border: 1px solid gray;
+.subsection_title{ /*Gamma-20*/
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.25;
+  background-color: #41d6c3;
 }
-.need_value{
-  text-align: justify;
-  padding-left: 40px;
-  margin: auto;
-  padding: 1em;
-  color: white;
-  background-color: #06131c;
-  clear: left;
-  text-align: center;
-}*/
-
-/*Cambios para las necesidades*/
-.need_article{
-  margin-left: 100px;
-  border-left: 2px solid gray;
-  padding: 1em;
-  overflow: hidden;
-  color: #f98107;
-}
-
-.need_title{
-  background: #f98107;
-  color: Black;
-  font-weight: bold;
-  font-family: Arial, sans-serif;
-}
-
-.need_value{
-  padding-left: 40px;
-}
-/*fin de los cambios para las necesidades*/
 
 /*Cambios para las imagenes y videos*/
 .media{
   display: inline;
-  float: right;
-  max-width: 40%;
-}
-
-.video{
-  margin-top: 20px;
-  margin-left: 150px;
+  width: 500px;
+  margin-left: 3rem;
+  margin-top: 2rem;
+  margin-right: 3rem;
+  margin-bottom: 2rem;
 }
 /*Fin de los cambos para imagenes y videos*/
 
-/*Cambios para las tecnologias involucradas*/
-.subsection_title{
-  margin-left: 8px;
-  color: white;
+footer p{
+  color: #152935;
+  margin-left: 17rem;
+  text-align: center;
+}
+
+.refX{
+  color: red;
   font-weight: bold;
-  font-family: Arial, sans-serif;
 }
-
-.subsection p{
-  margin-left: 19px;
-  text-align: left;
-  color: #f98107;
-}
-.subsection_text{
-  margin-left: 19px;
-  text-align: left;
-  color: #f98107;
-}
-/*Fin de los cambios para las tecnologias involucradas*/
-
-.go-top{
-  position: fixed;
-  bottom: 2em;
-  right: 2em;
-  text-decoration: none;
-  color: Black;
-  background-color: lightgrey;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 1em;
-  display: none;
-}
-
-.go-top:hover{
-  background-color: grey;
-}
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
