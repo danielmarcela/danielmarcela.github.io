@@ -19,7 +19,6 @@
 
 html {
     color: #666;
-    /*font-size: 1em;*/
     font-size: 18px;
 }
 
@@ -129,7 +128,7 @@ body{
 }
 
 .section_title{
-  background-color: var(--background_color_title); /*#FF6F00;*/
+  background-color: var(--background_color_title);
   color: Black;
   font-weight: bold;
   font-family: sans-serif;
@@ -194,23 +193,7 @@ body{
 
 .text_need_value{
   text-align: left;
-  /*padding:  10px 20px 30px 40px;*/
 }
-
-/*div.need{
-  width: 100%;
-  border: 1px solid gray;
-}
-.need_value{
-  text-align: justify;
-  padding-left: 40px;
-  margin: auto;
-  padding: 1em;
-  color: white;
-  background-color: #06131c;
-  clear: left;
-  text-align: center;
-}*/
 
 /*Cambios para las necesidades*/
 .need_article{
@@ -284,6 +267,7 @@ footer{
   bottom: 0;
 }
 
+/*Cambios para las referencias cruzadas*/
 .refX{
   color: red;
   font-weight: bold;

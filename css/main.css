@@ -233,6 +233,7 @@ footer p{
   text-align: center;
 }
 
+/*Cambios para las referencias cruzadas*/
 .refX{
   color: red;
   font-weight: bold;
